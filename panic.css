@@ -60,28 +60,28 @@
     font-family: 'Avenir Next';
     font-style: normal;
     font-weight: normal;
-    src: local("AvenirNext LT Pro Regular"), url("./panic/avenir/AvenirNextLTPro-Regular.otf") format("otf");
+    src: local("AvenirNextLTPro-Regular"), url("./panic/avenir/AvenirNextLTPro-Regular.otf") format("otf");
 }
 
 @font-face {
     font-family: 'Avenir Next';
     font-style: italic;
     font-weight: normal;
-    src: local("AvenirNext LT Pro Regular"), url("./panic/avenir/AvenirNextLTPro-It.otf") format("otf");
+    src: local("AvenirNextLTPro-It"), url("./panic/avenir/AvenirNextLTPro-It.otf") format("otf");
 }
 
 @font-face {
     font-family: 'Avenir Next';
     font-style: normal;
     font-weight: bold;
-    src: local("AvenirNext LT Pro Medium"), url("./panic/avenir/AvenirNextLTPro-Bold.otf") format("otf");
+    src: local("AvenirNextLTPro-Bold"), url("./panic/avenir/AvenirNextLTPro-Bold.otf") format("otf");
 }
 
 @font-face {
     font-family: 'Avenir Next';
     font-style: italic;
     font-weight: bold;
-    src: local("AvenirNext LT Pro Medium"), url("./panic/avenir/AvenirNextLTPro-BoldIt.otf") format("otf");
+    src: local("AvenirNextLTPro-BoldIt"), url("./panic/avenir/AvenirNextLTPro-BoldIt.otf") format("otf");
 }
 
 
@@ -90,7 +90,7 @@
 
 html {
     background: #111b2a;
-    font-size: 0.925rem;
+    font-size: 0.925rem; /* was 0.925rem; */
 }
 
 body {
@@ -99,7 +99,7 @@ body {
     font-family: "Avenir Next", "Nunito", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1em;
     height: 100%;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 #write {
@@ -129,7 +129,7 @@ h4,
 h5,
 h6 {
     cursor: text;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1.4;
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -159,7 +159,7 @@ h6 {
     float: none;
     font-size: 1rem;
     font-variant: 'small-caps';
-    font-weight: bold;
+    font-weight: normal;
     left: auto;
     line-height: 20px;
     padding: 0;
