@@ -1034,6 +1034,7 @@ input {
     position: static;
 }
 
+/*
 #write>p:first-child:not(:only-child)::before,
 #write>p:only-child::before {
     background: url("cobalt/splash.png") no-repeat 45% 90% transparent;
@@ -1050,6 +1051,7 @@ input {
     top: 0;
     width: 100%;
 }
+    BREAKS SELECTION??? */
 
 #write>p:only-child:empty::before {
     opacity: 1;
@@ -1074,6 +1076,7 @@ input {
   color: #b0b0b0;
   text-decoration: line-through;
 }
+
 #write .task-list-item.task-list-done > p > .md-emoji {
   opacity: 0.5;
 }
@@ -1095,77 +1098,4 @@ input {
 #write .task-list-item > input:focus {
   outline: none;
   box-shadow: none;
-}
-#write .task-list-item > input:hover {
-  border-color: #f9b537;
-}
-#write .task-list-item > input[checked]::before {
-  content: "";
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  height: 60%;
-  width: 2px;
-  transform: rotate(40deg);
-  background: #f9b537;
-}
-#write .task-list-item > input[checked]::after {
-  content: "";
-  position: absolute;
-  top: 46%;
-  left: 25%;
-  height: 30%;
-  width: 2px;
-  transform: rotate(-40deg);
-  background: #f9b537;
-}
-
-
-/* Sidebar outline */
-.pin-outline #typora-sidebar {
-	/*border-color: #090c11 !important;
-	box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.5);
-	border-right: 0px solid;*/
-}
-
-
-/* mega menu sidebar*/
-.megamenu-menu {
-  background-color: #111b2a;
-  box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* mega menu */
-.megamenu-content,
-.megamenu-opened header {
-  background: #111b2a;
-}
-
-/* bottom border */
-footer.ty-footer {
-    border: none;
-}
-
-
-.file-list-item{
-    box-shadow: 5px 0px 1px 0px black;
-}
-
-/* scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-  padding-right: 10px;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-/* scrollbar track */
-::-webkit-scrollbar-track:hover {
-  border-radius: 4px;
-}
-
-/* scrollbar thumb */
-::-webkit-scrollbar-thumb,
-::-webkit-scrollbar-thumb:active {
-  background-color: #57708d !important;
-  border-radius: 4px;
 }
